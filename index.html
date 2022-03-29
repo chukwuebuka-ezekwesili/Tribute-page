@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Tribute Page</title>
 </head>
 <body>
-    <header>
+    <div>
+    <header id="title">
         <h1>Abraham Lincoln (1809-1865)</h1>
         <p>
             An aberrant man who became the Sixteenth President of America, waged a political contest and civil war that protected the union, ended slavery 
@@ -15,21 +20,29 @@
         </p>
     </header>
 
-    <main>
+    <main id="main" class="first-section">
+        <div id="img-div">
         <figure>
-            <img id="image" src="images/abe_lincoln3.jfif" alt="President Abraham Lincoln at the middle of both men">
+            <img id="image" src="images/abraham-lincoln.jpg" alt="President Abraham Lincoln at the middle of both men">
         </figure>
         <figcaption id="img-caption">
             At the center is President Abraham Lincoln on the battlefield of Antietam, Maryland, with Major General McClernand and Allan Pinkerton, 
             Chief of Secret Service, October 4, 1862.
         </figcaption>
-        <article>
-            <section>
+        </div>
+    </div>
+    <article>
+        <div>
+            <section class="box-heading">
                 <h3>Here`s a detailed timeline of Abraham Lincoln`s life:</h3>
             </section>
+        </div>
+    </article>
 
-            <section>
-                <h4>1809-1823:</h4>
+    <article class="mainbox">                
+        <div>
+            <section class="box-1">
+                <h4 class="miniheading">1809-1823:</h4>
                 <ul>
                     <li>
                         <strong>1809, 12th Feb</strong>
@@ -68,9 +81,9 @@
                     </li>
                 </ul>
             </section>
-
-            <section>
-                <h4>1824-1837</h4>
+                 
+            <section class="box-2">
+                <h4 class="miniheading">1824-1837</h4>
                 <ul>
                     <li>
                         <strong>1828, 20th Jan</strong>
@@ -139,10 +152,10 @@
                         reply and the association ended.
                     </li>
                 </ul>
-            </section>
-
-            <section>
-                <h4>1838-1851</h4>
+            </section>   
+                
+            <section class="box-3">
+                <h4 class="miniheading">1838-1851</h4>
                 <ul>
                     <li>
                         <strong>1838, 27th Jan</strong>
@@ -242,10 +255,10 @@
                         (D. 15th July, 1871) born.
                     </li>
                 </ul>
-            </section>
+            </section>   
 
-            <section>
-                <h4>1852-1865</h4>
+            <section class="box-4">
+                <h4 class="miniheading">1852-1865</h4>
                 <ul>
                     <li>
                         <strong>1853, 4th April</strong>
@@ -383,9 +396,11 @@
                     </li>
                 </ul>
             </section>
-        </article>
+        </div>      
+    </article>
 
-        <article>
+    <article class="last-box">
+        <div>
             <section>
                 <p>"America will never be destroyed from the outside. If we falter and lose our freedoms, it will be because we destroyed 
                     ourselves."
@@ -394,12 +409,13 @@
                     </p>
                 </p>
             </section>
-        </article>
+        </div>    
+    </article>
     </main>
 
-    <footer>
+    <footer class="footer-box">
         <h3>
-            You should read more about this incredible human being on his<a href="https://en.wikipedia.org/wiki/Abraham_Lincoln"> wikipedia entry</a>
+            You should read more about this incredible human being on his<a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Abraham_Lincoln"> wikipedia entry</a>
         </h3>
     </footer>
 </body>
